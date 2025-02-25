@@ -1,0 +1,19 @@
+
+
+{% block content %}
+<h1>Liste des Producteurs</h1>
+
+<form method="GET">
+    <label for="cooperative_id">Filtrer par Coopérative ID :</label>
+    <input type="number" id="cooperative_id" name="cooperative_id">
+    <button type="submit">Filtrer</button>
+</form>
+
+<ul>
+    {% for producteur in producteurs %}
+        <li>{{ producteur.nom }}</li>
+    {% empty %}
+        <li>Aucun producteur trouvé.</li>
+    {% endfor %}
+</ul> 
+{% endblock content %}

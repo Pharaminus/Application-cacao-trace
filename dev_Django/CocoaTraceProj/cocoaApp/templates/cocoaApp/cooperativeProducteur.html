@@ -1,0 +1,15 @@
+
+
+{% block content %}
+<h1>My post</h1>
+    
+{% for object in object_list%}
+ {{ object.date_arriver_producteur}}
+ {{ object.producteur}} 
+ {{ object.cooperative}} 
+
+<hr/>
+{%empty%}
+<li> No object yet </li>
+ {% endfor %}        
+{% endblock content %}

@@ -1,0 +1,15 @@
+
+
+{% block content %}
+    <h1>My post</h1>
+        
+    {% for object in object_list%}
+    {{ object.id}}
+    {{ object.topic}}
+    {{ object.body}} 
+
+    <hr/>
+    {%empty%}
+    <li> No object yet </li>
+    {% endfor %}         
+{% endblock content %}

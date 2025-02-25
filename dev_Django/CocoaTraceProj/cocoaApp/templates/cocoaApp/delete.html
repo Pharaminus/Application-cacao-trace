@@ -1,0 +1,9 @@
+
+{% block content %}
+<h4>Delete post</h4>
+<form  method="post">
+    {% csrf_token %}
+    <p>Do you want to delete {{object}}?</p>
+    <input type="submit" value="Confirm">
+</form>
+{% endblock content %}

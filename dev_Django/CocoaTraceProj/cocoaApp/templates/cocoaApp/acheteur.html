@@ -1,0 +1,18 @@
+
+{% block content %}
+<h1>My post</h1>
+    
+{% for object in object_list%}
+ {{ object.nom}}
+ {{ object.prenom}} 
+ {{ object.type_acheteur}} 
+ {{ object.numero_cni}} 
+ {{ object.contact}} 
+ {{ object.filiale}} 
+
+<hr/>
+{%empty%}
+<li> No object yet </li>
+ {% endfor %} 
+{% endblock content %}
+    
