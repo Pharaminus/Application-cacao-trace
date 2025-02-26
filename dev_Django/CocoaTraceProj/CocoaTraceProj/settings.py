@@ -77,8 +77,8 @@ CORS_ALLOWED_ORIGINS = [
 ]
 
 CSRF_TRUSTED_ORIGINS = [
-    "http://192.168.1.194:3000",  # Ajoute localhost comme origine fiable
-#     "http://localhost:3000",  # Ajoute localhost comme origine fiable
+    # "http://192.168.1.194:3000",  # Ajoute localhost comme origine fiable
+    "http://localhost:3000",  # Ajoute localhost comme origine fiable
 ]
 
 CORS_ALLOW_ALL_ORIGINS = True
